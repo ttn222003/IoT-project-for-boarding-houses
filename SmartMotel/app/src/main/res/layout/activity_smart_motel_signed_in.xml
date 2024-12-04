@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard_signedIn.SmartMotelSignedInActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/informationUserConstraintLayout">
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cesplasmaTextView"
+            android:text="CESPLASMA"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CESTextView"
+            app:layout_constraintTop_toBottomOf="@id/cesplasmaTextView"
+            android:text="Creativity, Environmentally, Service"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mointorLayout"
+            app:layout_constraintTop_toBottomOf="@id/CESTextView">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monitor"
+                android:textAlignment="center"
+                android:textSize="40dp"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/monitor"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="8dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/mointorLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Control"
+                android:textSize="40dp"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 1"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay1">
+
+                </Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 2"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay2">
+
+                </Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 3"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay3">
+
+                </Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 4"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay4">
+
+                </Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 5"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay5">
+
+                </Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 6"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay6">
+
+                </Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 7"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay7">
+
+                </Switch>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="RELAY 8"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:textOn="ON"
+                    android:textOff="OFF"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/smartMotelRelay8">
+
+                </Switch>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

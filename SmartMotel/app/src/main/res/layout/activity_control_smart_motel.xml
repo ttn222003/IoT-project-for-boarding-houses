@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlSmartMotelActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cesplasmaTextView"
+            android:text="CESPLASMA"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CESTextView"
+            app:layout_constraintTop_toBottomOf="@id/cesplasmaTextView"
+            android:text="Creativity, Environmentally, Service"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fan1TextView"
+            android:textSize="30dp"
+            android:text="Fan 1"
+            app:layout_constraintTop_toBottomOf="@id/CESTextView"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            android:textOn="ON"
+            android:textOff="OFF"
+            app:layout_constraintTop_toBottomOf="@id/CESTextView"
+            app:layout_constraintLeft_toRightOf="@id/fan1TextView"
+            app:layout_constraintStart_toStartOf="@id/smartMotelLamp1"
+            android:layout_marginTop="20dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:id="@+id/smartMotelFan1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fan2TextView"
+            android:textSize="30dp"
+            android:text="Fan 2"
+            app:layout_constraintTop_toBottomOf="@id/fan1TextView"
+            android:layout_marginTop="20dp"
+
+            android:textAlignment="center"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            android:textOn="ON"
+            android:textOff="OFF"
+            app:layout_constraintTop_toBottomOf="@id/fan1TextView"
+            app:layout_constraintLeft_toRightOf="@id/fan2TextView"
+            app:layout_constraintStart_toStartOf="@id/smartMotelLamp1"
+            android:layout_marginTop="20dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:id="@+id/smartMotelFan2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lamp1TextView"
+            android:textSize="30dp"
+            android:text="Lamp 1"
+            app:layout_constraintTop_toBottomOf="@id/fan2TextView"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            app:layout_constraintTop_toBottomOf="@id/fan2TextView"
+            app:layout_constraintLeft_toRightOf="@id/lamp1TextView"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:textOn="ON"
+            android:textOff="OFF"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:id="@+id/smartMotelLamp1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lamp2TextView"
+            android:textSize="30dp"
+            android:text="Lamp 2"
+            app:layout_constraintTop_toBottomOf="@id/lamp1TextView"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            app:layout_constraintTop_toBottomOf="@id/lamp1TextView"
+            app:layout_constraintLeft_toRightOf="@id/lamp2TextView"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:textOn="ON"
+            android:textOff="OFF"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:id="@+id/smartMotelLamp2"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
