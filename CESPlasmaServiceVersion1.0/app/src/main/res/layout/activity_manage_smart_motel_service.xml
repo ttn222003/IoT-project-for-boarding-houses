@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SmartMotelService.ManageSmartMotelServiceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashboardConstrainLayout">
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cesplasmaTextView"
+                android:text="CESPLASMA"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CESTextView"
+                app:layout_constraintTop_toBottomOf="@id/cesplasmaTextView"
+                android:text="Creativity, Environmentally, Service"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/manageSmartMotelRecyclerView"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/CESTextView"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

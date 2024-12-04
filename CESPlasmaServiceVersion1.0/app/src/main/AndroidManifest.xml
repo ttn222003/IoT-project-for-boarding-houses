@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CESPlasmaService"
+        tools:targetApi="31">
+        <activity
+            android:name=".SmartMotelService.DetailedInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartMotelService.RegisterSmartMotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartMotelService.ManageSmartMotelServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartMotelService.RegisterSmartMotelServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartMotelService.EditSmartMotelServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartMotelService.RegisterSmartMotelService"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardSignedIn.SmartMotelSignedInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardNotSignedIn.SmartMotelNotSignedInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InformationUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequireEmailToChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

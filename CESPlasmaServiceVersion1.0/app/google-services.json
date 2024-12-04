@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1054979228272",
+    "firebase_url": "https://smart-motel-12139-default-rtdb.firebaseio.com",
+    "project_id": "smart-motel-12139",
+    "storage_bucket": "smart-motel-12139.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054979228272:android:21ba6f75e7ae56c35b2ab5",
+        "android_client_info": {
+          "package_name": "com.example.cesplasmaservice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw-l2RzNXpuMtbBNUUoJUMNCo20YkqUMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054979228272:android:b111050520fa81055b2ab5",
+        "android_client_info": {
+          "package_name": "com.example.smartmotel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw-l2RzNXpuMtbBNUUoJUMNCo20YkqUMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

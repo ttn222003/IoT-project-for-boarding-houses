@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dashboardConstrainLayout">
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cesplasmaTextView"
+            android:text="CESPLASMA"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CESTextView"
+            app:layout_constraintTop_toBottomOf="@id/cesplasmaTextView"
+            android:text="Creativity, Environmentally, Service"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/linearLayoutContainCardView"
+            app:layout_constraintTop_toBottomOf="@id/CESTextView"
+            >
+            <!--
+            cardElevation: độ đổ bóng của card
+            layout_weight: tỉ lệ không gian mà card view đó chiếm
+            -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/informationUserCardView"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="30dp">
+
+                <!-- Mot lop layout ben trong nua de dam bao Card view duoc cang giua-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/informationUserCardViewTextView"
+                        android:text="Thông tin tài khoản"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/informationUserImage" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/informationUserImage"
+                        android:src="@drawable/list"
+                        android:layout_margin="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/smartMotelCardView"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="30dp">
+
+                <!-- Mot lop layout ben trong nua de dam bao Card view duoc cang giua-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/smartMotelCardViewTextView"
+                        android:text="Nhà trọ thông minh"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/smartMotelImage" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/smartMotelImage"
+                        android:src="@drawable/motel"
+                        android:layout_margin="15dp"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

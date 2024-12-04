@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <!-- Background
+    @ Chiều rộng của background bằng với chiều rộng của màn hình
+    @ Chiều cao của background bằng 200dp
+    @ Background được lầy từ drawable/background_1.xml, có thể thay đổi do đây là background tự vẽ
+    -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_1"/>
+
+    <!-- Tên Activity
+    @ Chiều rộng của TextView bằng với chiều rộng của màn hình
+    @ Chiều cao của TextView bằng chữ Login bằng 40dp
+    @ gravity: center để TextView nằm ở giữa
+    @ Tạo khoảng cách với background phía trên bằng 40dp
+    @ Tạo khoảng cách với background phía dưới bằng 26dp
+    @ TextStyle: bold để TextView in đậm
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/green"
+        android:gravity="center"
+        android:layout_marginTop="40sp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="26sp"/>
+
+    <!--TextInputLayout
+    @ Layout để chứa TextInputEditText, cho phép thực hiện các layout của phần tử
+    @ padding để tạo khoảng cách giữa TextInputEditText và TextInputLayout, ở đây ta padding 2 bên bằng 50dp
+    @ boxStrokeColor: doi mau vien cua input
+    @ Các cornerRadius: tạo các corner radius của input-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:boxStrokeColor="@color/green"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp">
+
+        <!--Đặt ID để có thể truy xuất đến TextInputEditText từ file java tương ứng-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/user_icon"
+            android:drawablePadding="10dp"
+            android:textSize="18dp"
+            android:id="@+id/usernameLogin"
+            android:hint="Tài khoản"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tương tự như TextInputLayout ở trên-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:boxStrokeColor="@color/green"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="10dp"
+            android:textSize="18dp"
+            android:id="@+id/passwordLogin"
+            android:hint="Mât khẩu"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Linear Layout này dùng để chứa Button và ProgressBar, có nhiệm vụ chính là căn giữa nội dung
+    và đặt Button cùng ProgressBar trên cùng 1 hàng ngang với thuộc tính orientation-->
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <!-- Đặt ID để có thể truy xuất đến Button từ file java tương ứng
+        @ Button có nhiệm vụ đăng nhập vào hệ thống-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:text="Đăng nhập"
+            android:visibility="visible"
+            android:textSize="18dp"
+            android:backgroundTint="@color/green"/>
+
+    </LinearLayout>
+
+    <!-- Linear Layout này dùng để chứa TextView Change Password và có nhiệm vụ chinh là căn giữa nội dung -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/changePasswordLogin"
+            android:text="Thay đổi mật khẩu?"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>

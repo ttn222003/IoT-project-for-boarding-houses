@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboardNotSignedIn.SmartMotelNotSignedInActivity">
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cesplasmaTextView"
+        android:text="CESPLASMA"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CESTextView"
+        android:text="Creativity, Environmentally, Service"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationTextView"
+        android:text="Bạn chưa đăng ký dịch vụ Smart Motel của CES Plasma"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactTextView"
+        android:text="Nếu có nhu cầu sử dụng dịch vụ"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneTextView"
+        android:text="Vui lòng liên hệ số điện thoại"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPhoneTextView"
+        android:text="123456789"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"/>
+
+</LinearLayout>
